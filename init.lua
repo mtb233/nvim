@@ -27,11 +27,10 @@ vim.cmd("set tabstop=2 softtabstop=0 shiftwidth=2")
 vim.cmd.colorscheme "kanagawa-dragon"
 
 -- lsp keymaps
-vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
-vim.keymap.set("n", "<leader>d", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-vim.keymap.set("n", "<leader>D", vim.diagnostic.open_float, {})
 vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, {})
+vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, {})
+vim.keymap.set("n", "<leader>H", vim.diagnostic.open_float, {})
 
 -- nvim-tree keymaps.
 vim.keymap.set("n", "<leader>tf", ":NvimTreeOpen<CR>")
