@@ -32,8 +32,8 @@ vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, {})
 vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "<leader>H", vim.diagnostic.open_float, {})
 
--- nvim-tree keymaps.
-vim.keymap.set("n", "<leader>tf", ":NvimTreeOpen<CR>")
+-- oil keymaps
+vim.keymap.set("n", "<leader>tf", ":Oil<CR>")
 
 -- nvim-telescope keymaps.
 local telescope_builtin = require("telescope.builtin")
