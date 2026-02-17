@@ -29,6 +29,7 @@ vim.opt.signcolumn = "yes" -- Always show sign column
 vim.opt.showmatch = true -- Highlight matching brackets
 vim.opt.matchtime = 2 -- How long to show matching bracket
 vim.opt.cmdheight = 1 -- Command line height
+vim.opt.winborder = "rounded"
 
 -- Buffer keymaps
 vim.keymap.set("n", "<Tab>", ":bnext<CR>", {desc = "Next buffer"})
@@ -81,3 +82,13 @@ vim.pack.add({
 })
 require("oil").setup()
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", {desc = "Open parent directory"})
+
+-- mini.pick
+vim.pack.add({
+	"https://github.com/nvim-mini/mini.pick"
+})
+require("mini.pick").setup()
+vim.keymap.set("n", "<leader>ff", ":Pick files<Cr>")
+vim.keymap.set("n", "<leader>fb", ":Pick buffers<Cr>")
+vim.keymap.set("n", "<leader>fg", ":Pick grep live<Cr>")
+vim.keymap.set("n", "<leader>fh", ":Pick help<Cr>")
