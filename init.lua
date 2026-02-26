@@ -73,7 +73,8 @@ vim.lsp.enable({
 	"lua_ls",
 	"clangd",
 	"pyright",
-	"fortls"
+	"fortls",
+	"tinymist"
 })
 
 -- Oil
@@ -92,3 +93,29 @@ vim.keymap.set("n", "<leader>ff", ":Pick files<Cr>")
 vim.keymap.set("n", "<leader>fb", ":Pick buffers<Cr>")
 vim.keymap.set("n", "<leader>fg", ":Pick grep live<Cr>")
 vim.keymap.set("n", "<leader>fh", ":Pick help<Cr>")
+
+-- blink
+vim.pack.add({
+	"https://github.com/saghen/blink.cmp"
+})
+require("blink.cmp").setup({
+	keymap = {
+		preset = "default"
+	},
+	appearance = {
+		nerd_font_variant = 'mono'
+	},
+	completion = {
+		documentation = {
+			auto_show = true
+		}
+	},
+	sources = {
+		default = {
+			'lsp', 'path', 'snippets', 'buffer'
+		},
+	},
+	fuzzy = {
+		implementation = "lua"
+	}
+})
