@@ -15,7 +15,7 @@ vim.opt.shiftwidth = 2 -- Indent width
 vim.opt.softtabstop = 2 -- Soft tab stop
 vim.opt.smartindent = true -- Smart auto-indenting
 vim.opt.autoindent = true -- Copy indent from current line
-vim.opt.colorcolumn = "80" -- Highlight column 80
+vim.opt.colorcolumn = "120" -- Highlight column 80
 
 -- Search options
 vim.opt.incsearch = true -- Show matches as you type
