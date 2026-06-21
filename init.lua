@@ -29,9 +29,9 @@ vim.opt.cmdheight = 1 -- Command line height
 vim.opt.winborder = "rounded"
 
 -- Colorscheme
-vim.pack.add({"https://github.com/dgox16/oldworld.nvim"})
+vim.pack.add({"https://github.com/rebelot/kanagawa.nvim"})
 vim.opt.background = "dark"
-vim.cmd.colorscheme("oldworld")
+vim.cmd.colorscheme("kanagawa-wave")
 
 require("keymaps")
 require("lsp-dap")

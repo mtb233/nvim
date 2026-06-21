@@ -17,17 +17,7 @@ require("mason-tool-installer").setup({
 		"lua_ls",
 		"clangd",
 		"neocmake",
-
-		"codelldb",
+		"mesonlsp",
+		"json-lsp"
 	}
 })
-
--- ============================================================================
--- Debugging
--- ============================================================================
-vim.pack.add({"https://codeberg.org/mfussenegger/nvim-dap"})
-vim.pack.add({"https://github.com/jay-babu/mason-nvim-dap.nvim"})
-require("mason-nvim-dap").setup({
-	handlers = {}
-})
-vim.pack.add({"https://github.com/igorlfs/nvim-dap-view"})

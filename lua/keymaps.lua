@@ -26,10 +26,4 @@ keys.add({
 	
 	-- Clear highlighting on escape
 	{"<esc>", "<cmd>noh<cr><esc>", desc = "Escape and clear hlsearch", mode={"i", "n"}},
-
-	-- Auto close pairs
-	{'"', '""<left>', desc="", mode="i", hidden=true},
-	{"(", "()<left>", desc="", mode="i", hidden=true},
-	{"[", "[]<left>", desc="", mode="i", hidden=true},
-	{"{", "{}<left>", desc="", mode="i", hidden=true},
 })
