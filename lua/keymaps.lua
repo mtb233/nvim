@@ -20,6 +20,8 @@ keys.add({
 	{"<S-Tab>", ":tabprevious<CR>", desc = "Previous tab"},
 	{"<leader>te", ":tabnew<CR>", desc = "New tab"},
 	{"<leader>tc", ":tabclose<CR>", desc = "Delete tab"},
+	{"<leader>tl", ":+tabmove<CR>", desc = "Move tab right in list"},
+	{"<leader>th", ":-tabmove<CR>", desc = "Move tab left in list"},
 
 	-- Navigating/managing windows
 	{"<leader>w", group="window", mode="n"},
