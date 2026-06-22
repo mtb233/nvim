@@ -8,9 +8,18 @@ keys.add({
 
 	-- Navigating/managing buffers
 	{"<leader>b", group="buffer", mode="n"},
-	{"<Tab>", ":bnext<CR>", desc = "Next buffer"},
-	{"<S-Tab>", ":bprevious<CR>", desc = "Previous buffer"},
+	{"bn", ":bnext<CR>", desc = "Next buffer"},
+	{"bp", ":bprevious<CR>", desc = "Previous buffer"},
 	{"<leader>bc", ":bd<CR>", desc = "Delete buffer"},
+
+	-- Navigating/managing tabs
+	{"<leader>t", group="tab", mode="n"},
+	{"<leader>tn", ":tabnext<CR>", desc = "Next tab"},
+	{"<leader>tp", ":tabprevious<CR>", desc = "Previous tab"},
+	{"<Tab>", ":tabnext<CR>", desc = "Next tab"},
+	{"<S-Tab>", ":tabprevious<CR>", desc = "Previous tab"},
+	{"<leader>te", ":tabnew<CR>", desc = "New tab"},
+	{"<leader>tc", ":tabclose<CR>", desc = "Delete tab"},
 
 	-- Navigating/managing windows
 	{"<leader>w", group="window", mode="n"},

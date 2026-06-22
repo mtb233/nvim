@@ -41,7 +41,11 @@ cmp.setup()
 vim.pack.add({
 	"https://github.com/akinsho/bufferline.nvim"
 })
-require("bufferline").setup()
+require("bufferline").setup({
+	options = {
+		mode = "tabs"
+	}
+})
 
 -- Git signs
 vim.pack.add({
