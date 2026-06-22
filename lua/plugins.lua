@@ -51,3 +51,10 @@ require("gitsigns").setup()
 
 -- DAP View
 vim.pack.add({"https://github.com/igorlfs/nvim-dap-view"})
+
+-- Lualine
+vim.pack.add({
+		'https://github.com/nvim-tree/nvim-web-devicons',
+    'https://github.com/nvim-lualine/lualine.nvim'
+})
+require("lualine").setup()
