@@ -10,6 +10,7 @@ keys.add({
 	{"<leader>b", group="buffer", mode="n"},
 	{"bn", ":bnext<CR>", desc = "Next buffer"},
 	{"bp", ":bprevious<CR>", desc = "Previous buffer"},
+	{"<leader>bb", ":b#<CR>", desc = "Go to other buffer"},
 	{"<leader>bc", ":bd<CR>", desc = "Delete buffer"},
 
 	-- Navigating/managing tabs
