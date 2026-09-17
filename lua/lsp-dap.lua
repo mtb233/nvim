@@ -18,6 +18,7 @@ require("mason-tool-installer").setup({
 		"clangd",
 		"neocmake",
 		"mesonlsp",
-		"json-lsp"
+		"json-lsp",
+    "tinymist"
 	}
 })
