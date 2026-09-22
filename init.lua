@@ -11,9 +11,9 @@ vim.opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
 
 -- Indentation options
 vim.opt.expandtab = true
-vim.opt.tabstop = 2 -- Tab width
-vim.opt.shiftwidth = 2 -- Indent width
-vim.opt.softtabstop = 2 -- Soft tab stop
+vim.opt.tabstop = 4 -- Tab width
+vim.opt.shiftwidth = 4 -- Indent width
+vim.opt.softtabstop = 4 -- Soft tab stop
 vim.opt.smartindent = true -- Smart auto-indenting
 vim.opt.autoindent = true -- Copy indent from current line
 vim.opt.colorcolumn = "120" -- Highlight column 120
