@@ -34,6 +34,9 @@ vim.pack.add({"https://github.com/54L1M/Oshen.nvim"})
 vim.opt.background = "dark"
 vim.cmd.colorscheme("oshen-night")
 
+-- Clipboard
+vim.opt.clipboard = "unnamedplus"
+
 require("keymaps")
 require("lsp-dap")
 require("plugins")
